@@ -31,10 +31,3 @@ hugo new posts/my-post-title.md
 # Edit content/posts/my-post-title.md
 # Set draft: false to publish
 ```
-
-## Deploying
-### GitHub Pages
-```bash
-hugo --baseURL "https://yourusername.github.io"
-# Push /public to gh-pages branch
-```
