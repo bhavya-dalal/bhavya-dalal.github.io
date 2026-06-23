@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ with .Content }}<div>{{ . }}</div>{{ end }}
+{{ if .Pages }}
+
+This is my notebook, where I try to put my learnings.
+<ul class="post-list">
+  {{ range .Pages }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span>
+  </li>
+  {{ end }}
+</ul>
+{{ else }}
+<p>No posts yet.</p>
+{{ end }}
+{{ end }}

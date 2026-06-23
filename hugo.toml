@@ -1,0 +1,19 @@
+baseURL = "https://bhavya-dalal.github.io/"
+locale = "en-us"
+title = "Bhavya Dalal"
+
+[params]
+  name = "Bhavya Dalal"
+  description = "Controls & Robotics Engineer"
+  email = "bhvydll@gmail.com"
+  linkedin = "https://linkedin.com/in/bhavya-dalal"
+  x = "https://x.com/bhavyadalal"
+  github = "https://github.com/bhavya-dalal"
+  location = "India"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

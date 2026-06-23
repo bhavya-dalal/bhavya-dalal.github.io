@@ -1,0 +1,12 @@
+# Hugo build directory
+public/
+
+# Hugo lock file 
+.hugo_build.lock
+
+# Generated cache resources (can be regenerated automatically)
+resources/_gen/
+
+# Local build logs or server execution environments
+assets/jsconfig.json
+hugo.log

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <nav>
+    <a class="nav-home" href="/">{{ .Site.Title }}</a>
+    <div class="nav-links">
+      <a href="/posts">Posts</a>
+      <a href="/about">About</a>
+    </div>
+  </nav>
+
+  {{ block "main" . }}{{ end }}
+
+  <footer>
+    <span>© {{ now.Year }} {{ .Site.Params.Name }} · {{ .Site.Params.location }}</span>
+    <span>
+      <a href="mailto:{{ .Site.Params.email }}">Email</a> | 
+      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> |
+      <a href="{{ .Site.Params.x }}" target="_blank" rel="noopener">X (Twitter)</a> |
+      <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>
+    </span>
+  </footer>
+</body>
+</html>
