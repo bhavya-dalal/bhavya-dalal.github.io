@@ -17,3 +17,7 @@ title = "Bhavya Dalal"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-W27P3X4H6N'
