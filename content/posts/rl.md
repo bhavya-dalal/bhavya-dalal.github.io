@@ -1,7 +1,7 @@
 ---
 title: "Resources : Reinforcement Learning"
 date: 2026-06-23T15:02:42Z
-draft: true
+draft: false
 ---
 
 1. Stanford Online - CS224 Deep Reinforcement Learning. [[YouTube](https://youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL&si=5iQDJ6cZpf4U422V)]
